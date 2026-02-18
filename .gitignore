@@ -1,0 +1,81 @@
+# Build outputs
+bin/*.dll
+bin/*.exe
+bin/*.pdb
+core/build/
+*.exe
+*.dll
+*.lib
+*.pdb
+*.exp
+*.obj
+*.o
+
+# Keep bin directory structure but ignore DLLs
+!bin/.gitkeep
+
+# Visual Studio
+.vs/
+*.user
+*.suo
+*.sln.docstates
+*.vcxproj.filters
+*.vcxproj.user
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+env/
+*.egg-info/
+dist/
+build/
+
+# Test outputs
+tests/*.jpg
+tests/*.png
+tests/*.json
+tests/test_images/*.jpg
+tests/test_images/*.png
+tests/crop_fix_test_output.jpg
+tests/comparison_result.png
+tests/comparison_result.json
+tests/crop_factor_results.json
+tests/norm_mode_results.json
+tests/optimization_results.json
+
+# Keep test_images directory
+!tests/test_images/.gitkeep
+
+# Data directories
+data/
+temp/
+output/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+*.tmp
+
+# Backup files
+*.bak
+*.backup
+*.old
+
+# Large model files (optional - uncomment if models are too large)
+# assets/models/*.onnx
+# assets/deps/
+
+# Logs
+*.log
